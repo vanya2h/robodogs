@@ -6,8 +6,9 @@ export const threeModule = new ContainerModule(bind => {
   const scene = new THREE.Scene();
   bind(MAIN_SCENE).toConstantValue(scene);
 
-  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-  camera.position.z = 5;
+  const camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 10000);
+  camera.position.set(0, 0, 10);
+
   bind(MAIN_CAMERA).toConstantValue(camera);
 
   const renderer = new THREE.WebGLRenderer();

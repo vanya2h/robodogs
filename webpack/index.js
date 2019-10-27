@@ -43,7 +43,15 @@ const base = {
         options: {
           limit: 10000,
         },
-      },
+			},
+			{
+				test: /\.(glsl|vs|fs|vert|frag)$/,
+				exclude: /node_modules/,
+				use: [
+					'raw-loader',
+					'glslify-loader'
+				]
+			}
     ],
   },
   plugins: [
