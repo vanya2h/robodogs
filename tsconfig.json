@@ -59,7 +59,7 @@
 
     /* Experimental Options */
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,          /* Enables experimental support for emitting type metadata for decorators. */
+    "emitDecoratorMetadata": true          /* Enables experimental support for emitting type metadata for decorators. */
   },
   "include": ["src/**/*"]
 }

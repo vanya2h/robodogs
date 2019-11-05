@@ -1,5 +1,5 @@
 import webpack from 'webpack';
-import { config, paths } from '../config';
+import { config } from '../config';
 
 const configure = base => ({
   mode: 'development',

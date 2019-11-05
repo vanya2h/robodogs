@@ -38,12 +38,12 @@ const base = {
         },
       },
       {
-        test: /\.(png|gif|jpeg|svg|woff|woff2)$/,
+        test: /\.(png|gif|jpeg|svg|woff|woff2|jpg)$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
         },
-      },
+			}
     ],
   },
   plugins: [
