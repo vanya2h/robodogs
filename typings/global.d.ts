@@ -1,11 +1,4 @@
-type Point3D = [number, number, number];
-type Point2D = [number, number];
-
 type Rectangle = [number, number];
-
-/**
- * Ethereum address
- */
 
 interface IAddress {
 	toString: () => string,
@@ -30,29 +23,26 @@ interface IAsset {
 	image: string,
 }
 
-interface ITile {
-	point: Point3D,
-	asset: IAsset
-}
+// interface IEntity extends IOwnable {
+// 	id: string,
+// 	basis: Point,
+// 	tiles: Tile[],
+// 	occupied: Point[],
+// }
 
-interface IEntity extends IOwnable {
-	id: string,
-	basis: Point2D,
-	tiles: ITile[],
-	occupied: Point2D[],
-}
+// interface IArea extends IOwnable {
+// 	id: string,
+// 	basis: Point,
+// 	entities: IEntity[],
+// 	occupied: Point[],
+// 	owner: IUser,
+// 	address:  IAddress
+// }
 
-interface IArea extends IOwnable {
-	id: string,
-	basis: Point2D,
-	entities: IEntity[],
-	occupied: Point2D[],
-	owner: IUser,
-	address:  IAddress
-}
+// interface IWorld {
+// 	size: number,
+// 	areas: IArea[],
+// 	decorations: IEntity[],
+// }
 
-interface IWorld {
-	size: number,
-	areas: IArea[],
-	decorations: IEntity[],
-}
+

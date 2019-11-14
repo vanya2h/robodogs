@@ -1,4 +1,5 @@
-export const MAIN_CAMERA = Symbol.for('MAIN_CAMERA');
-export const MAIN_SCENE = Symbol.for('MAIN_SCENE');
-export const MAIN_RENDERER = Symbol.for('MAIN_RENDERER');
-export const GLTF_LOADER = Symbol.for('GLTF_LOADER');
+export const APP_NODE = Symbol.for("APP_NODE")
+export const INJECTED_PIXI_APP = Symbol.for("INJECTED_PIXI_APP");
+export const MAP_SIZE = Symbol.for("MAP_SIZE");
+export const TILE_CONFIG = Symbol.for("TILE_CONFIG");
+export const GAME_CONTAINER = Symbol.for("GAME_CONTAINER");
